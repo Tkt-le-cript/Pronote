@@ -2,122 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Tableau de bord - Pronote local</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      display: flex;
-      height: 100vh;
-      background-color: #f2f2f2;
-    }
-
-    /* Menu latéral */
-    .sidebar {
-      width: 220px;
-      background-color: #2f4050;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      padding: 20px 0;
-    }
-
-    .sidebar h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 25px;
-      display: block;
-      transition: background 0.2s;
-    }
-
-    .sidebar a:hover {
-      background-color: #1ab394;
-    }
-
-    /* Contenu principal */
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header {
-      background-color: #1ab394;
-      padding: 20px;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .content {
-      padding: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      color: #2f4050;
-    }
-
-    .card p {
-      color: #555;
-    }
-
-  </style>
+  <title>Accueil | Pronote+</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="sidebar">
     <h2>Pronote+</h2>
-    <a href="#">🏠 Accueil</a>
-    <a href="#">📅 Emploi du temps</a>
-    <a href="#">📊 Notes</a>
-    <a href="#">📝 Devoirs</a>
-    <a href="#">💬 Messagerie</a>
-    <a href="#">⚙️ Paramètres</a>
+    <a href="index.html">🏠 Accueil</a>
+    <a href="emploi.html">📅 Emploi du temps</a>
+    <a href="notes.html">📊 Notes</a>
+    <a href="devoirs.html">📝 Devoirs</a>
   </div>
 
   <div class="main">
     <div class="header">Bienvenue, Élève Test</div>
     <div class="content">
       <div class="card">
-        <h3>Prochain cours</h3>
+        <h3>📅 Prochain cours</h3>
         <p>Mathématiques - 10h00 à 11h00 - Salle B2</p>
       </div>
       <div class="card">
-        <h3>Dernière note</h3>
+        <h3>⭐ Dernière note</h3>
         <p>Français : 15/20</p>
       </div>
       <div class="card">
-        <h3>Devoirs à faire</h3>
+        <h3>📚 Devoirs à faire</h3>
         <p>Histoire : Chapitre 3 à relire</p>
-      </div>
-      <div class="card">
-        <h3>Messages non lus</h3>
-        <p>2 nouveaux messages du professeur</p>
       </div>
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
